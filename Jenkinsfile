@@ -29,7 +29,7 @@ node{
    sh "docker tag thangamuuthieya/myweb:0.0.2 13.233.67.189:8083/thanga:1.0.0"
    sh 'docker push 13.233.67.189:8083/thanga:1.0.0'
    }
-   stage('Remove Previous Container'){
+	stage('Remove Previous Container'){
 	try{
 		sh 'docker rm -f tomcattest'
 	}catch(error){
